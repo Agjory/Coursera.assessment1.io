@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head><title="HTML&CSS assessment"></title></head>
+<head>
+  <title="HTML&CSS assessment"></title>
+  <link rel="stylesheet" href="style.css">>
+</head>
 <body>
   <h1>Please Enter Your Details For Our Dating Website!</h1>
   <fieldset><legend>Your face</legend>
@@ -32,8 +35,14 @@
   </fieldset><br>
 
   <fieldset><legend>Your indicators</legend>
-    <label for="height">Height: Short <input type="range" name="height" id="height" min="0" max="100"></input> Tall</label><br>
-    <label for="salary">Salary: Poor <input type="range" name="salary" id="salary" min="0" max="100"></input> Rich</label>
+    <label for="height">Height: </label>
+    <label for="height" class="left">Short</label>
+    <input type="range" name="height" id="height" min="0" max="100"></input>
+    <label for="height" class="right">Tall</label><br>
+    <label for="salary">Salary: </label>
+    <label for="salary" class="left">Poor</label>
+    <input type="range" name="salary" id="salary" min="0" max="100"></input>
+    <label for="salary" class="right">Rich</label><br>
   </fieldset><br>
 
   <fieldset><legend>Your Contact Information</legend>
@@ -41,9 +50,9 @@
     <input type="email" name="email" id="email"></input><br>
     <label for="tel">Mobile: </label>
     <input type="tel" name="tel" id="tel"></input><br>
-    <label for="address">Address</label>
+    <label for="address">Address: </label>
     <textarea name="address" id="address"></textarea><br>
-    <label for="contactMethod">Method to contact you: </label>
+    <label for="contactMethod" class="checkboxes">Method to contact you: </label>
     <input type="checkbox" name="contactMethod" id="contactMethod" class="contactMethod" value="email">Email </input>
     <input type="checkbox" name="contactMethod" id="contactMethod" class="contactMethod" value="whatsapp">Whatsapp </input>
     <input type="checkbox" name="contactMethod" id="contactMethod" class="contactMethod" value="in-app chat">In-app chat </input>
