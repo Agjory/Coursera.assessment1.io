@@ -10,6 +10,12 @@ label{
   text-align: right;
   text-align: top;
 }
+label:hover{
+  font-size: 40px;
+}
+input:hover{
+  font-size: 40px;
+}
 .checkboxes{
   width: auto;
 }
